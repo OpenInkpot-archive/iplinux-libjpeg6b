@@ -23,7 +23,7 @@ DH_COMPAT=1
 build: build-stamp 
 build-stamp: patch-stamp
 	dh_testdir
-	./configure --prefix=/usr --mandir=usr/share/man \
+	CC=$(DEB_HOST_GNU_TYPE)-gcc ./configure --prefix=/usr --mandir=usr/share/man \
 	 --enable-static --enable-shared --enable-maxmem=1024 \
 	 --build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE) 
 #	printf '#!/bin/sh\nexec libtool "$$@"\n' >libtool
