@@ -1,13 +1,15 @@
 Source: libjpeg6b
-Maintainer: Bill Allombert <ballombe@debian.org>
-Section: graphics
+Maintainer: Alexander Kerner <lunohod@openinkpot.org>
+Section: gui
 Priority: optional
 Build-Depends: debhelper (>= 5), autotools-dev, libtool, sharutils
+XCS-Cross-Build-Depends: cross-toolchain
+XCS-Cross-Host-Build-Depends: autotools-dev, debhelper, libtool, sharutils
 Standards-Version: 3.7.2
 
 Package: libjpeg62
 Architecture: any
-Section: libs
+Section: gui
 Description: The Independent JPEG Group's JPEG runtime library
  The Independent JPEG Group's JPEG library is a library for handling
  JPEG files.
