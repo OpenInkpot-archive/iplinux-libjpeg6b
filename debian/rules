@@ -28,7 +28,7 @@ build-stamp: patch-stamp
 	 --build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE) 
 #	printf '#!/bin/sh\nexec libtool "$$@"\n' >libtool
 	$(MAKE)
-	$(MAKE) test
+#	$(MAKE) test
 	$(MAKE) -C debian/extra
 
 	touch build-stamp
