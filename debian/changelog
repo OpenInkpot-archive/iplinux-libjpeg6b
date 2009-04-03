@@ -1,3 +1,9 @@
+libjpeg6b (6b-14.ip1+b1) asimov; urgency=low
+
+  * Rebuild with new toolchain.
+
+ -- Alexander Kerner <lunohod@openinkpot.org>  Fri, 03 Apr 2009 16:32:21 +0200
+
 libjpeg6b (6b-14.ip1) asimov; urgency=low
 
   * first IPlinux build
